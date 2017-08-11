@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Accueil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="pseudo && mdp" id="div-log">
+    <h2>Bonjour {{ pseudo }},</h2>
+  </div>
+
+  <div *ngIf="!pseudo || !mdp" id="div-err">
+    <p>Il faut remplir tous les champs !</p>
+  </div>
+  
+
+</ion-content>
